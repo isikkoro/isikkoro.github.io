@@ -4,7 +4,6 @@
     box-sizing: border-box;
   }
   body {
-    font-family: 'Segoe UI', sans-serif;
     color: #333;
     background: #f9f9f9;
     line-height: 1.6;
@@ -107,21 +106,21 @@
 .profile-image {
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* 円形にする */
+  border-radius: 50%;
   object-fit: cover;
 }
 
 
 .profile-content {
-    display: flex; /* Use flexbox to align content and image */
-    align-items: flex-start; /* Align items to the top */
-    gap: 70px; /* Space between text and image */
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
 }
 
 .main-profile-image {
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
-    border-radius: 10%; /* Makes it slightly rounded, can be 50% for circular */
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
     object-fit: cover;
-    flex-shrink: 0; /* Prevents the image from shrinking */
+    flex-shrink: 0;
 }
