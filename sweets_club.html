@@ -70,15 +70,35 @@
             cursor: pointer;
             outline: none;
         }
-        .table-of-contents ul {
-            list-style-type: none;
-            padding-left: 10px;
+        .toc-table-wrapper {
+            overflow-x: auto;
             margin-top: 15px;
             border-top: 1px solid #eee;
             padding-top: 15px;
         }
-        .table-of-contents li {
-            margin-bottom: 8px;
+        .toc-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 14px;
+        }
+        .toc-table th,
+        .toc-table td {
+            border: 1px solid #e0e0e0;
+            padding: 6px 4px;
+            white-space: nowrap;
+        }
+        .toc-table thead th {
+            background-color: #eee;
+            font-weight: 600;
+        }
+        .toc-table tbody th {
+            background-color: #eee;
+            font-weight: 600;
+            padding: 6px 10px;
+        }
+        .toc-table td {
+            background-color: #fff;
         }
         .table-of-contents a {
             text-decoration: none;
@@ -124,25 +144,92 @@
 
         <details class="table-of-contents" id="page-top" close>
             <summary>コンテンツ</summary>
+            青丸をクリックでとべます。
             
-            <ul>
-                <li><a href="#activity-2606">2026年6月</a></li>
-                <li><a href="#activity-2605">2026年5月</a></li>
-                <li><a href="#activity-2601">2026年1月</a></li>
-                <li><a href="#activity-2510">2025年10月</a></li>
-                <li><a href="#activity-2509">2025年9月</a></li>
-                <li><a href="#activity-2507">2025年7月</a></li>
-                <li><a href="#activity-2506">2025年6月</a></li>
-                <li><a href="#activity-2505">2025年5月</a></li>
-                <li><a href="#activity-2504">2025年4月</a></li>
-                <li><a href="#activity-2502">2025年2月</a></li>
-                <li><a href="#activity-2411">2024年11月</a></li>
-                <li><a href="#activity-2410">2024年10月</a></li>
-                <li><a href="#activity-2407">2024年07月</a></li>
-                <li><a href="#activity-2405">2024年05月</a></li>
-                <li><a href="#activity-2404">2024年04月</a></li>
-            </ul>
+            <div class="toc-table-wrapper">
+                <table class="toc-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>1月</th>
+                            <th>2月</th>
+                            <th>3月</th>
+                            <th>4月</th>
+                            <th>5月</th>
+                            <th>6月</th>
+                            <th>7月</th>
+                            <th>8月</th>
+                            <th>9月</th>
+                            <th>10月</th>
+                            <th>11月</th>
+                            <th>12月</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>2026</th>
+                            <td><a href="#activity-2601" title="2026年1月">●</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#activity-2605" title="2026年5月">●</a></td>
+                            <td><a href="#activity-2606" title="2026年6月">●</a></td>
+                            <td><a href="#activity-2607" title="2026年7月">●</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>2025</th>
+                            <td></td>
+                            <td><a href="#activity-2502" title="2025年2月">●</a></td>
+                            <td></td>
+                            <td><a href="#activity-2504" title="2025年4月">●</a></td>
+                            <td><a href="#activity-2505" title="2025年5月">●</a></td>
+                            <td><a href="#activity-2506" title="2025年6月">●</a></td>
+                            <td><a href="#activity-2507" title="2025年7月">●</a></td>
+                            <td></td>
+                            <td><a href="#activity-2509" title="2025年9月">●</a></td>
+                            <td><a href="#activity-2510" title="2025年10月">●</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>2024</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#activity-2404" title="2024年4月">●</a></td>
+                            <td><a href="#activity-2405" title="2024年5月">●</a></td>
+                            <td></td>
+                            <td><a href="#activity-2407" title="2024年7月">●</a></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#activity-2410" title="2024年10月">●</a></td>
+                            <td><a href="#activity-2411" title="2024年11月">●</a></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </details>
+
+        <section class="activity" id="activity-2607">
+            <h2>2026年7月 : みつばち(左),古都香(右)
+            </h2>
+            <!-- <p>
+                感想
+            </p> -->
+            <div class="photo-gallery">
+                <img src="img/2607_1.png" alt="ところてん">
+                <img src="img/2607_2.png" alt="団子">
+            </div>
+            <div class="back-to-top-wrapper">
+                <a href="#page-top" class="back-to-top-btn">ページ上部へ戻る</a>
+            </div>
+        </section>
 
         <section class="activity" id="activity-2606">
             <h2>2026年6月 : 松涛カフェ</h2>
